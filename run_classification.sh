@@ -2,7 +2,7 @@ export TASK_NAME=SST-3
 export MODEL=[name of pre-trained model in huggingface]
 export GLUE_DIR=[path to your dataset]
 export W_DIR=[path to your model saved locally]
-export OUT_DIR=【path to your output-dir]
+export OUT_DIR=[path to your output-dir]
 
 CUDA_VISIBLE_DEVICES=1 nohup python /home/zhouchenchen/transformers/examples/text-classification/three_classification.py > stocknews/$MODEL.txt\
     --model_name_or_path $W_DIR \
