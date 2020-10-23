@@ -9,4 +9,4 @@ git clone https://github.com/cczhou-nju/Financial-sentiment-analysis-NLP-Transfo
 cd Financial-sentiment-analysis-NLP-Transformers
 pip install -e .
 ```
-
+if the code aboved do not work, you can directly download transformers library(the installation process in https://github.com/huggingface/transformers). And the you need to download the dataset folder in our project and move it to the path of transformers. 
