@@ -36,16 +36,16 @@ The results in Reddit-news dataset:
 
  Model  | Precison  | Recall  | F1  |  
  ---- | ----- | ------  
- SVM  | 72.79  | 71.78  | 71.73
- bert-base-cased  | 96.39  |96.36  |96.36
- bert-large-cased  | 97.02  | 97.00  | 97.00
- xlnet-base-cased  | 90.30  | 89.83  | 89.80
- xlnet-large-cased  | 89.87  | 89.11  | 89.04
- distilbert-base-cased  | 95.83  | 95.76  | 95.77
- albert-base-v2  | 95.45  | 95.38  | 95.38
- longformer-base-4096  | 92.76  | 92.30  | 92.32
- roberta-base  | 93.55  | 93.39  | 93.39
- roberta-large  | 96.03  | 95.98  | 95.99
- bart-base  | 94.97  | 94.93  | 94.94
- bart-large  | 95.85  | 95.80  | 95.80
+ SVM  | 72.79  | 71.78  | 71.73  
+ bert-base-cased  | 96.39  |96.36  |96.36  
+ bert-large-cased  | 97.02  | 97.00  | 97.00  
+ xlnet-base-cased  | 90.30  | 89.83  | 89.80  
+ xlnet-large-cased  | 89.87  | 89.11  | 89.04  
+ distilbert-base-cased  | 95.83  | 95.76  | 95.77  
+ albert-base-v2  | 95.45  | 95.38  | 95.38  
+ longformer-base-4096  | 92.76  | 92.30  | 92.32  
+ roberta-base  | 93.55  | 93.39  | 93.39  
+ roberta-large  | 96.03  | 95.98  | 95.99  
+ bart-base  | 94.97  | 94.93  | 94.94  
+ bart-large  | 95.85  | 95.80  | 95.80  
  
