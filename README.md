@@ -33,6 +33,7 @@ python svm.py
 
 ## Benchmark
 The results in Reddit-news dataset:
+
  Model  | Precison  | Recall  | F1  |  
  ---- | ----- | ------  
  SVM  | 72.79  | 71.78  | 71.73
