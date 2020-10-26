@@ -68,6 +68,7 @@ The results in Financial Phrase-Bank dataset:
 | bart-base             | 86.15       | 85.67       | 85.73   |  
 | bart-large            | 88.31       | 88.15       | 88.18   |  
 
-The speed of Transformers:
+The speed of Transformers is shown in speed.png
 
-![image](https://github.com/cczhou-nju/Financial-sentiment-analysis-NLP-Transformers/speed.png)
+
+<!-- ![image](https://github.com/cczhou-nju/Financial-sentiment-analysis-NLP-Transformers/speed.png) -->
