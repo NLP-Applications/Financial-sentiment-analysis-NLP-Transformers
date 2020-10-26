@@ -4,7 +4,7 @@ export GLUE_DIR=[path to your dataset]
 export W_DIR=[path to your model saved locally]
 export OUT_DIR=[path to your output-dir]
 
-CUDA_VISIBLE_DEVICES=1 nohup python three_classification.py > [path to your output log]\
+CUDA_VISIBLE_DEVICES=1 nohup python examples/text-classification/three_classification.py > [path to your output log]\
     --model_name_or_path $MODE/$W_DIR \
     --task_name $TASK_NAME \
     --do_eval \
