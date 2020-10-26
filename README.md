@@ -25,11 +25,13 @@ bash run_classification.sh
 ```
 
 ### SVM
-When training Transformers for FSA, you can run the file `svm.py`. After you complete the parameters in python file, enter the following command at the terminal：
+When training SVM for FSA, you can run the file `svm.py`. After you complete the parameters in python file, enter the following command at the terminal：
 
 ```python
 python svm.py
 ```
+
+Or you can add `nohup` to specifu the location of the output file.
 
 ## Benchmark
 The results in Reddit-news dataset:
@@ -57,7 +59,7 @@ The results in Financial Phrase-Bank dataset:
 | bert-base-cased       | 80.26       | 79.34       | 79.13   |  
 | bert-large-cased      | 85.46       | 85.40       | 85.42   |  
 | xlnet-base-cased      | 83.15       | 82.92       | 82.84   |  
-| xlnet-large-cased     | 74.3        | 74.4        | 74.3    |  
+| xlnet-large-cased     | 74.30       | 74.40       | 74.30   |  
 | distilbert-base-cased | 80.32       | 79.89       | 79.79   |  
 | albert-base-v2        | 79.52       | 78.79       | 78.51   |  
 | longformer-base-4096  | 86.50       | 86.50       | 86.49   |  
@@ -65,3 +67,6 @@ The results in Financial Phrase-Bank dataset:
 | roberta-large         | 87.69       | 87.60       | 87.59   |  
 | bart-base             | 86.15       | 85.67       | 85.73   |  
 | bart-large            | 88.31       | 88.15       | 88.18   |  
+
+The speed of Transformers:
+
