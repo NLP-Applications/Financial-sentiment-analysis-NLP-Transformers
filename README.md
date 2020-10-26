@@ -17,3 +17,9 @@ pip install -e .
 Or you can directly download transformers library or the whole project(following the installation process in https://github.com/huggingface/transformers). And you need to download the dataset folder in our project and move it to the path of transformers project. 
 
 ## Usage
+### Transforerms
+When training Transformers for FSA, you can just run the file three_classification.sh. Enter the following command at the terminal：
+
+```bash
+bash 
+```
