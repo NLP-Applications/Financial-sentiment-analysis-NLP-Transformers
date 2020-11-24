@@ -69,4 +69,4 @@ The results in Financial Phrase-Bank dataset:
 
 The speed of Transformers is shown in speed.png
 
-![image](https://github.com/cczhou-nju/Financial-sentiment-analysis-NLP-Transformers/speed.png)
+![image](https://github.com/cczhou-nju/Financial-sentiment-analysis-NLP-Transformers/blob/main/speed.png)
