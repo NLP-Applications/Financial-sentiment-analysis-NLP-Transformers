@@ -31,7 +31,6 @@ When training SVM for FSA, you can run the file `svm.py`. After you complete the
 python svm.py
 ```
 
-Or you can add `nohup` to specifu the location of the output file.
 
 ## Benchmark
 The results in Reddit-news dataset:
@@ -70,5 +69,4 @@ The results in Financial Phrase-Bank dataset:
 
 The speed of Transformers is shown in speed.png
 
-![image](speed.png)
-<!-- ![image](https://github.com/cczhou-nju/Financial-sentiment-analysis-NLP-Transformers/speed.png) -->
+![image](https://github.com/cczhou-nju/Financial-sentiment-analysis-NLP-Transformers/speed.png)
