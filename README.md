@@ -2,11 +2,19 @@
 
 ## Introduction
 This project is the implement of "SEEKING BETTER NLP TRANSFORMERS FOR FINANCIAL SENTIMENT ANALYSIS". We released our datasets and code. One of the two datasets is labeled by our experts, consisting of Reddit-News. We evaluate different NLP Transformers on the two financial datasets. Based on our experimental results, traders and investors can choose better model for financial sentiment analysis (FSA). 
+This project is the implement of "SEEKING BETTER NLP TRANSFORMERS FOR FINANCIAL SENTIMENT ANALYSIS". We evaluate different NLP Transformers on two financial datasets. Based on our experimental results, traders and investors can choose better model for financial sentiment analysis (FSA). 
 
 ## Set up
 Tip: You need to install pytorch before starting this project.
+## Dataset
+One of the two datasets is labeled by our experts, consisting of Reddit-News that may have influence on financial markets. Another dataset is Financial Phrase-Bank dataset. You can find the two datasets under folder `dataset`.  
+
+## Environment
+Our code is implemented in `python=3.8.3,pytorch=1.6.0(GPU version)`. 
 
 This project is implemented by transfromers library of Huggingface(https://github.com/huggingface/transformers). You need to install transformers. The process is as following:
+## Set up
+This project is implemented by transfromers library of [Huggingface](https://github.com/huggingface/transformers). You need to install transformers. The process is as following:
 
 ```bash
 git clone https://github.com/cczhou-nju/Financial-sentiment-analysis-NLP-Transformers.git
@@ -15,17 +23,39 @@ pip install -e .
 ```
 
 Or you can directly download transformers library or the whole project(following the installation process in https://github.com/huggingface/transformers). And you need to download the dataset folder in our project and move it to the path of transformers project. 
+Or you can directly download transformers library or the whole project by following the installation process [here](https://github.com/huggingface/transformers). Then you need to download the dataset folder in our project and move it to the path of your transformers project. 
 
 ## Usage
 ### Transforerms
 When training Transformers for FSA, you can just run the file `run_classification.sh`. After you complete the parameters in bash file, enter the following command at the terminal：
+When training Transformers for FSA, you need to download the pre-trained model you need [here](https://huggingface.co/models). 
 
 ```bash
 bash run_classification.sh
+export TASK_NAME=SST-3
+export MODEL=[pre-trained model in huggingface ]
+export GLUE_DIR=[path to your dataset]
+export W_DIR=[the path to your model]
+export OUT_DIR=[path to your output-dir]
+CUDA_VISIBLE_DEVICES=[GPU used] python three_classification.py\
+    --model_name_or_path $W_DIR \
+    --task_name $TASK_NAME \
+    --do_eval \
+    --do_train \
+    --data_dir $GLUE_DIR/$TASK_NAME \
+    --max_seq_length 128 \
+    --per_device_eval_batch_size=8 \
+    --per_device_train_batch_size=8 \
+    --learning_rate 2e-5 \
+    --num_train_epochs 5.0 \
+    --seed 42 \
+    --overwrite_output_dir \
+    --output_dir $OUT_DIR/
 ```
 
 ### SVM
 When training SVM for FSA, you can run the file `svm.py`. After you complete the parameters in python file, enter the following command at the terminal：
+When training SVM for FSA, you can run the file `svm.py`. You can change the parameters in this python file.
 
 ```python
 python svm.py
