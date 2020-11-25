@@ -4,10 +4,13 @@
 This project is the implement of "SEEKING BETTER NLP TRANSFORMERS FOR FINANCIAL SENTIMENT ANALYSIS". We evaluate different NLP Transformers on two financial datasets. Based on our experimental results, traders and investors can choose better model for financial sentiment analysis (FSA). 
 
 ## Dataset
-One of the two datasets is labeled by our experts, consisting of Reddit-News that may have influence on financial markets. Another dataset is Financial Phrase-Bank dataset. You can find the two datasets under folder `dataset`.  
+One of the two datasets is labeled by our experts, consisting of [Reddit-News](https://www.kaggle.com/aaron7sun/stocknews) that may have influence on financial markets. Another dataset is Financial Phrase-Bank dataset. You can find the two datasets under folder `dataset`.  
 
 ## Environment
 Our code is implemented in `python=3.8.3,pytorch=1.6.0(GPU version)`. 
+```pip
+pip install pytorch==3.8.3
+```
 
 ## Set up
 This project is implemented by transfromers library of [Huggingface](https://github.com/huggingface/transformers). You need to install transformers. The process is as following:
@@ -22,7 +25,9 @@ Or you can directly download transformers library or the whole project by follow
 
 ## Usage
 ### Transforerms
-When training Transformers for FSA, you need to download the pre-trained models you need [here](https://huggingface.co/models). 
+1.When training Transformers for FSA, you need to download the pre-trained models you need [here](https://huggingface.co/models). 
+
+2.Train and evaluate the model on financial datasets.
 
 ```bash
 export TASK_NAME=SST-3
@@ -47,12 +52,12 @@ CUDA_VISIBLE_DEVICES=[GPU used] python three_classification.py\
 ```
 
 ### SVM
-When training SVM for FSA, you can run the file `svm.py`. You can change the parameters in this python file.
+1.When training SVM for FSA, you can run the file `svm.py`. 
 
 ```python
 python svm.py
 ```
-
+2.You can change the parameters in the python file.
 
 ## Benchmark
 The results in Reddit-news dataset:
@@ -92,3 +97,6 @@ The results in Financial Phrase-Bank dataset:
 The speed of Transformers is shown in speed.png
 
 ![image](https://github.com/cczhou-nju/Financial-sentiment-analysis-NLP-Transformers/blob/main/speed.png)
+
+##Contact
+You can email cczhou@smail.nju.edu.cn for help.
