@@ -98,5 +98,5 @@ The speed of Transformers is shown in speed.png
 
 ![image](https://github.com/cczhou-nju/Financial-sentiment-analysis-NLP-Transformers/blob/main/speed.png)
 
-##Contact
+## Contact
 You can email cczhou@smail.nju.edu.cn for help.
