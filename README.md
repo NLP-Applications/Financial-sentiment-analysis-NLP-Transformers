@@ -4,7 +4,18 @@
 This project is the implement of "SEEKING BETTER NLP TRANSFORMERS FOR FINANCIAL SENTIMENT ANALYSIS". We evaluate different NLP Transformers on two financial datasets. Based on our experimental results, traders and investors can choose better model for financial sentiment analysis (FSA). 
 
 ## Dataset
-One of the two datasets is labeled by our experts, consisting of [Reddit-News](https://www.kaggle.com/aaron7sun/stocknews) that may have influence on financial markets. Another dataset is Financial Phrase-Bank dataset. You can find the two datasets under folder `dataset`.  
+One of the two datasets is labeled by our experts, consisting of [Reddit-News](https://www.kaggle.com/aaron7sun/stocknews) that may have influence on financial markets. Another dataset is Financial Phrase-Bank dataset. You can find the two datasets under folder `dataset`. 
+### Reddit-News Dataset
+Considering news from non-financial domains like politics and military may also have great influence on the financial markets, we collect Reddit news which may influence the finance. For example, new political policies tend to affect export economies. Some companies may benefit from the new policies while others may not.  
+27408 pieces of Reddit news are examined by experts and annotated as 0 for neutral, 1 for positive ,and 2 for negative emotions. The distribution of sentiment labels is presented in the following table.  All texts in this dataset are no longer than 128 so that these texts satisfy the maximum sequence length requirements of NLP Transformers. The distribution of sentence length is presented in distribution.png.
+
+|                  | Positive | Negative | Neutral |  
+| ---------------- | -------- | -------- | ------- |  
+| Training set     | 8248     | 8248     | 8248    |  
+| Validation set   | 888      | 888      | 888     |  
+| Total            | 9136     | 9136     | 9136    | 
+
+![image](https://github.com/cczhou-nju/Financial-sentiment-analysis-NLP-Transformers/blob/main/distribution.png)
 
 ## Environment
 Our code is implemented in `python=3.8.3,pytorch=1.6.0(GPU version)`. 
